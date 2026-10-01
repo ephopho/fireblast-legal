@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Fire Blast: Support</title>
 <meta name="description" content="Help with Fire Blast, the inter-service marksmanship game." />
+<link rel="icon" href="./icon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="./apple-touch-icon.png" />
 <style>
   :root { color-scheme: light dark; }
   * { box-sizing: border-box; }
@@ -18,9 +20,8 @@
   }
   .wrap { max-width: 720px; margin: 0 auto; padding: 48px 22px 80px; }
   .badge {
-    width: 64px; height: 64px; border-radius: 20px;
-    background: linear-gradient(135deg, #1a2433, #0c121c);
-    display: flex; align-items: center; justify-content: center;
+    width: 64px; height: 64px; border-radius: 14px;   /* the iOS icon corner, 22% */
+    display: block;
     box-shadow: 0 10px 24px rgba(12, 18, 28, 0.35);
   }
   h1 { font-size: 30px; margin: 22px 0 2px; letter-spacing: -0.5px; }
@@ -39,17 +40,7 @@
 </head>
 <body>
 <div class="wrap">
-  <div class="badge">
-    <svg width="40" height="40" viewBox="0 0 48 48" fill="none" aria-hidden="true">
-      <circle cx="24" cy="24" r="17" stroke="#e8782a" stroke-width="3"/>
-      <circle cx="24" cy="24" r="10" stroke="#fac45c" stroke-width="2.6"/>
-      <line x1="24" y1="4" x2="24" y2="16" stroke="#e8782a" stroke-width="2.6" stroke-linecap="round"/>
-      <line x1="24" y1="32" x2="24" y2="44" stroke="#e8782a" stroke-width="2.6" stroke-linecap="round"/>
-      <line x1="4" y1="24" x2="16" y2="24" stroke="#e8782a" stroke-width="2.6" stroke-linecap="round"/>
-      <line x1="32" y1="24" x2="44" y2="24" stroke="#e8782a" stroke-width="2.6" stroke-linecap="round"/>
-      <circle cx="24" cy="24" r="2.6" fill="#fac45c"/>
-    </svg>
-  </div>
+  <img class="badge" src="./icon.svg" width="64" height="64" alt="Fire Blast app icon" />
   <h1>Fire Blast Support</h1>
   <p>Need a hand on the range? We're happy to help.</p>
 
